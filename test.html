@@ -4,49 +4,60 @@
   <meta charset="UTF-8">
   <title>Document</title>
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  background-color: #83d5dcb3;
-  padding: 10px;
+#content_1{
+    grid-column-start: 1;
+    grid-column-end: 7;
 }
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(198, 234, 231, 0.84);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+#left {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
-#item1{
-  grid-column-start: 1;
-  grid-column-end: 5;
+#center {
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
-#item2{
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-#item5{
-  display: grid;
-  grid-template-rows: 300px;
-  grid-column-start: 2;
-  grid-column-end: 5;
-}
-#item6{
-  grid-column-start: 1;
-  grid-column-end: 5;
+#right {
+    grid-column-start: 5;
+    grid-column-end: 7;
 }
 </style>
 
 </head>
 <body>
-<div class="grid-container">
-  <div class="grid-item" id="item1">1</div>
-  <div class="grid-item" id="item2">2</div>
-  <div class="grid-item" id="item3">3</div>
-  <div class="grid-item" id="item4">4</div>
-  <div class="grid-item" id="item5">5</div>
-  <div class="grid-item" id="item6">6</div>
-</div>
+
+  <div class="bs-example" data-example-id="thumbnails-with-custom-content">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail" >
+          <img src="${ctx}/resources/img/samsung_galaxys9.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+          <div class="caption">
+            <h3 id="thumbnail-label">SMART PHONE<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail" >
+      <img src="${ctx}/resources/img/samsung_notebook.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+          <div class="caption">
+            <h3 id="thumbnail-label">NOTEBOOK<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail" >
+      <img src="${ctx}/resources/img/samsung_desktop.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">  
+          <div class="caption">
+            <h3 id="thumbnail-label">DESKTOP<a class="anchorjs-link" href="#thumbnail-label"><span class="anchorjs-icon"></span></a></h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
